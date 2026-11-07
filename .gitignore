@@ -1,0 +1,5 @@
+.env
+agentlab/
+__pycache__/
+research_memory/
+runs/

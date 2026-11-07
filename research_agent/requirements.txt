@@ -1,0 +1,10 @@
+openai>=1.40
+requests
+feedparser
+pydantic>=2
+python-dotenv
+streamlit>=1.35
+chromadb            # optional: falls back to JSON memory if it won't install
+# optional extras (instructor demos)
+# langgraph>=1.0
+# mcp

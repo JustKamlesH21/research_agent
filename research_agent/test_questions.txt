@@ -1,0 +1,4 @@
+# one research question per line; add 10-20 from your department
+LLM hallucination in medical question answering
+deep learning for cardiac risk prediction from medical images
+retrieval augmented generation evaluation benchmarks
