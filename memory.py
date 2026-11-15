@@ -10,6 +10,8 @@ NOTES_JSON = os.path.join(MEMORY_DIR, "notes.json")
 os.makedirs(MEMORY_DIR, exist_ok=True)
 
 try:
+    if os.getenv("MEMORY_BACKEND") == "json":   # hosted demo: skip Chroma's 1 GB+ RAM / model download
+        raise RuntimeError("MEMORY_BACKEND=json")
     import chromadb
     from chromadb.config import Settings
     _db = chromadb.PersistentClient(path=MEMORY_DIR,

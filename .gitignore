@@ -3,3 +3,4 @@ agentlab/
 __pycache__/
 research_memory/
 runs/
+.streamlit/secrets.toml

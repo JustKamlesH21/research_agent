@@ -3,13 +3,24 @@
 Same pipeline as team.py, but the stages are called here one at a time so the page can
 show live progress (stepper, skeleton cards, per-paper reading) instead of one spinner.
 """
+import datetime as dt
 import html
+import os
 
 import streamlit as st
 
-from llm import USAGE
+# hosted demo (Streamlit Community Cloud): settings live in the app's Secrets box, not .env.
+# Copy them into env vars *before* llm.py is imported, because it reads them at import time.
+try:
+    for _k, _v in st.secrets.items():
+        if isinstance(_v, (str, int, float)):
+            os.environ.setdefault(_k, str(_v))
+except Exception:  # noqa: BLE001  no secrets.toml locally: .env is used instead
+    pass
+
+from llm import USAGE  # noqa: E402
 from team import after_critic, critic, final_report, planner, read_papers, save_run, \
-    screener, searchers, writer
+    screener, searchers, writer  # noqa: E402
 
 STAGES = ["Plan", "Search", "Screen", "Approve", "Read", "Write ⇄ Critic"]
 e = html.escape
@@ -188,6 +199,22 @@ st.set_page_config(page_title="Research Assistant", page_icon="📚", layout="wi
 html_md(st, CSS)
 html_md(st, HERO)
 ss = st.session_state
+
+# hosted-demo guards, both optional: DEMO_UNTIL=2026-12-13 turns the app off after that date,
+# ACCESS_CODE=... keeps strangers from spending the class's API quota
+_until = os.getenv("DEMO_UNTIL", "").strip()
+if _until and dt.date.today() > dt.date.fromisoformat(_until):
+    st.info("This classroom demo has ended. Run it yourself from the course repository.")
+    st.stop()
+_code = os.getenv("ACCESS_CODE", "").strip()
+if _code and ss.get("code_ok") is not True:
+    entered = st.text_input("Access code (from your instructor)", type="password")
+    if entered.strip() != _code:
+        if entered:
+            st.error("Wrong code.")
+        st.stop()
+    ss.code_ok = True
+    st.rerun()
 
 with st.form("ask", border=False):                          # stage 1 · clarify
     c1, c2 = st.columns([4, 1])
