@@ -12,6 +12,10 @@ Ask a plain LLM for papers on a topic and it will happily invent some. This assi
 
 The code is also a teaching walk-through. It grows from a single tool-using agent (Session 2) into a six-agent team with a human approval step (Session 3), and the [file table](#where-each-idea-lives) maps each file to the slide that explains it.
 
+<p align="center">
+  <picture><source media="(max-width: 767px)" srcset="assets/readme/glance-m.svg"><img src="assets/readme/glance.svg" width="100%" alt="At a glance. Built: Nov 2026; Made for: An agents workshop, Sessions 2 and 3; Stack: OpenAI SDK · Streamlit · Chroma; Status: Offline tests pass"></picture>
+</p>
+
 ## Quick start
 
 ```bash
