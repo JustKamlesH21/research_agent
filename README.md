@@ -43,6 +43,12 @@ streamlit run app.py                  # the web UI
 
 Every team run saves `runs/<time>-<question>.md` (the review) and a `.json` with the full state, as an audit trail.
 
+## Architecture
+
+<p align="center">
+  <picture><source media="(max-width: 767px)" srcset="assets/readme/architecture-m.svg"><img src="assets/readme/architecture.svg" width="100%" alt="Architecture. interfaces: Streamlit, CLI, MCP server; agents: Planner + searchers, Screener, Reader, writer, critic; tools: tools.py, memory.py; outside: Paper APIs, LLM"></picture>
+</p>
+
 ## Commands
 
 | What | Command |
