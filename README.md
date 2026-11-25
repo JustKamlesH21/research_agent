@@ -1,5 +1,5 @@
 <p align="center">
-  <picture><source media="(max-width: 767px)" srcset="assets/readme/banner-m.svg"><img src="assets/readme/banner.svg" width="100%" alt="Research Assistant: ask a research question and get a short literature review that cites real arXiv, OpenAlex and Semantic Scholar records."></picture>
+  <picture><source media="(max-width: 767px)" srcset="assets/readme/banner-m.png"><img src="assets/readme/banner.svg" width="100%" alt="Research Assistant: ask a research question and get a short literature review that cites real arXiv, OpenAlex and Semantic Scholar records."></picture>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@ Ask a plain LLM for papers on a topic and it will happily invent some. This assi
 The code is also a teaching walk-through. It grows from a single tool-using agent (Session 2) into a six-agent team with a human approval step (Session 3), and the [file table](#where-each-idea-lives) maps each file to the slide that explains it.
 
 <p align="center">
-  <picture><source media="(max-width: 767px)" srcset="assets/readme/glance-m.svg"><img src="assets/readme/glance.svg" width="100%" alt="At a glance. Built: Nov 2026; Made for: An agents workshop, Sessions 2 and 3; Stack: OpenAI SDK · Streamlit · Chroma; Status: Offline tests pass"></picture>
+  <picture><source media="(max-width: 767px)" srcset="assets/readme/glance-m.png"><img src="assets/readme/glance.svg" width="100%" alt="At a glance. Built: Nov 2026; Made for: An agents workshop, Sessions 2 and 3; Stack: OpenAI SDK · Streamlit · Chroma; Status: Offline tests pass"></picture>
 </p>
 
 ## Quick start
@@ -35,7 +35,7 @@ streamlit run app.py                  # the web UI
 ## How the team works
 
 <p align="center">
-  <picture><source media="(max-width: 767px)" srcset="assets/readme/how-it-works-m.svg"><img src="assets/readme/how-it-works.svg" width="100%" alt="How the team works: a question goes to a planner, parallel searchers over arXiv, OpenAlex and Semantic Scholar, and a screener; you approve the shortlist; then a reader, a writer and a critic produce the cited review."></picture>
+  <picture><source media="(max-width: 767px)" srcset="assets/readme/how-it-works-m.png"><img src="assets/readme/how-it-works.svg" width="100%" alt="How the team works: a question goes to a planner, parallel searchers over arXiv, OpenAlex and Semantic Scholar, and a screener; you approve the shortlist; then a reader, a writer and a critic produce the cited review."></picture>
 </p>
 
 1. **Planner** turns the question into searches.
@@ -50,7 +50,7 @@ Every team run saves `runs/<time>-<question>.md` (the review) and a `.json` with
 ## Architecture
 
 <p align="center">
-  <picture><source media="(max-width: 767px)" srcset="assets/readme/architecture-m.svg"><img src="assets/readme/architecture.svg" width="100%" alt="Architecture. interfaces: Streamlit, CLI, MCP server; agents: Planner + searchers, Screener, Reader, writer, critic; tools: tools.py, memory.py; outside: Paper APIs, LLM"></picture>
+  <picture><source media="(max-width: 767px)" srcset="assets/readme/architecture-m.png"><img src="assets/readme/architecture.svg" width="100%" alt="Architecture. interfaces: Streamlit, CLI, MCP server; agents: Planner + searchers, Screener, Reader, writer, critic; tools: tools.py, memory.py; outside: Paper APIs, LLM"></picture>
 </p>
 
 ## Commands
@@ -100,5 +100,5 @@ The `research_agent/` subfolder is an older copy of the same project; the files 
 No license file has been added yet, so default copyright applies.
 
 <p align="center">
-  <a href="https://github.com/JustKamlesH21"><picture><source media="(max-width: 767px)" srcset="assets/readme/footer-m.svg"><img src="assets/readme/footer.svg" width="100%" alt="Part of Kamlesh OS. More projects on github.com/JustKamlesH21"></picture></a>
+  <a href="https://github.com/JustKamlesH21"><picture><source media="(max-width: 767px)" srcset="assets/readme/footer-m.png"><img src="assets/readme/footer.svg" width="100%" alt="Part of Kamlesh OS. More projects on github.com/JustKamlesH21"></picture></a>
 </p>
