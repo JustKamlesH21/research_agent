@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme/banner.svg" width="100%" alt="Research Assistant: ask a research question and get a short literature review that cites real arXiv, OpenAlex and Semantic Scholar records.">
+  <picture><source media="(max-width: 767px)" srcset="assets/readme/banner-m.svg"><img src="assets/readme/banner.svg" width="100%" alt="Research Assistant: ask a research question and get a short literature review that cites real arXiv, OpenAlex and Semantic Scholar records."></picture>
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@ streamlit run app.py                  # the web UI
 ## How the team works
 
 <p align="center">
-  <img src="assets/readme/how-it-works.svg" width="100%" alt="How the team works: a question goes to a planner, parallel searchers over arXiv, OpenAlex and Semantic Scholar, and a screener; you approve the shortlist; then a reader, a writer and a critic produce the cited review.">
+  <picture><source media="(max-width: 767px)" srcset="assets/readme/how-it-works-m.svg"><img src="assets/readme/how-it-works.svg" width="100%" alt="How the team works: a question goes to a planner, parallel searchers over arXiv, OpenAlex and Semantic Scholar, and a screener; you approve the shortlist; then a reader, a writer and a critic produce the cited review."></picture>
 </p>
 
 1. **Planner** turns the question into searches.
@@ -90,5 +90,5 @@ The `research_agent/` subfolder is an older copy of the same project; the files 
 No license file has been added yet, so default copyright applies.
 
 <p align="center">
-  <a href="https://github.com/JustKamlesH21"><img src="assets/readme/footer.svg" width="100%" alt="Part of Kamlesh OS. More projects on github.com/JustKamlesH21"></a>
+  <a href="https://github.com/JustKamlesH21"><picture><source media="(max-width: 767px)" srcset="assets/readme/footer-m.svg"><img src="assets/readme/footer.svg" width="100%" alt="Part of Kamlesh OS. More projects on github.com/JustKamlesH21"></picture></a>
 </p>
